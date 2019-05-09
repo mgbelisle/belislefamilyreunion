@@ -1,0 +1,26 @@
+{{ define "banner-h2" }}Belisle Family Reunion 2019{{ end }}
+{{ define "banner-img" }}{{ call .URL "/img/banners/home.jpg" }}{{ end }}
+{{ define "banner-img-mobile" }}{{ call .URL "/img/banners/home-mobile.jpg" }}{{ end }}
+{{ define "banner-class" }}text-white{{ end }}
+{{ define "banner" }}
+{{ template "banner-tmpl" . }}
+{{ end }}
+
+{{ block "content" . }}
+<div class="my-5">
+  <h2>When</h2>
+  <p>Friday Aug 2nd 2:30pm - Monday Aug 5th 12:00pm</p>
+  <h2>Where</h2>
+  <p>
+    Union Gospel Mission Camp<br>
+    6088 Martha Boardman Rd, Ford, WA 99013
+  </p>
+  <p>Map: <a href="https://goo.gl/maps/XpdjzjmNpF72">https://goo.gl/maps/XpdjzjmNpF72</a></p>
+  <h2>Questions</h2>
+  <p>
+    Contact Matt Belisle<br>
+    <a href="tel:1-406-599-4238">406-599-4238</a><br>
+    <a href="mailto:belislefamilyreunion@gmail.com">belislefamilyreunion@gmail.com</a><br>
+  </p>
+</div>
+{{ end }}
